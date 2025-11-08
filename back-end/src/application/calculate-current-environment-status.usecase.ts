@@ -79,7 +79,7 @@ export class CalculateCurrentEnviromentStatusUseCase
       luminosityStatus: status[average.luminosityStatus / data?.length],
       soundsStatus: status[average.soundsStatus / data?.length],
       temperatureStatus: status[average.temperatureStatus / data?.length],
-      humidityStatus: status[average.humidityStatus / data?.length],
+      humidityStatus: status[average.humidityStatus / data?.length] ?? '',
     } as Omit<EnviromentStatus, 'timestamp'>;
 
     await this.repository.setLastFiveMinutesInsights(lastFiveMinutes);
