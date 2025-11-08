@@ -1,0 +1,40 @@
+.current-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.status-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid rgba(97, 219, 251, 0.2);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.status-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(97, 219, 251, 0.4);
+}
+
+.current-status label {
+  color: #61dbfb;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.current-status label > p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin: 0;
+}

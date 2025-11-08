@@ -1,0 +1,15 @@
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.home-buttons button {
+  color: #61dbfb;
+  cursor: pointer;
+}
+
+.home h2 {
+  color: #61dbfb;
+}
